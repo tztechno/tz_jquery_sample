@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery UI TAB</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="tabs">
+        <ul>
+            <li><a href="#tab-1">タブ1</a></li>
+            <li><a href="#tab-2">タブ2</a></li>
+            <li><a href="#tab-3">タブ3</a></li>
+        </ul>
+        <div id="tab-1">
+            <p>タブ1のコンテンツ</p>
+        </div>
+        <div id="tab-2">
+            <p>タブ2のコンテンツ</p>
+        </div>
+        <div id="tab-3">
+            <p>タブ3のコンテンツ</p>
+        </div>
+    </div>
+    <script>
+        $(function() {
+        $( "#tabs" ).tabs();
+        });
+    </script>
+
+</body>
+
+</html>
