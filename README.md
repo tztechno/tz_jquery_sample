@@ -3,4 +3,4 @@ jquery library sample
 
 ## slider
 
-<img src='slider.png' width='600'>
+<img src='slider.png' width='400'>
