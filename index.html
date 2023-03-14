@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery UI Slider</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="//code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+    <style>
+        #slider {
+            width: 5cm;
+            height: 10px;
+        }
+
+        #slider-value {
+            margin-top: 10px;
+            font-size: 1.2em;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>jQuery UI Slider</h2>
+    <div id="slider"></div>
+    <div id="slider-value">50</div>
+    <script>
+        $(function () {
+            var slider = $("#slider");
+            var output = $("#slider-value");
+            slider.slider({
+                min: 0,
+                max: 100,
+                value: 50,
+                slide: function (event, ui) {
+                    output.text(ui.value);
+                }
+            });
+            output.text(slider.slider("value"));
+        });
+    </script>
+</body>
+
+</html>
